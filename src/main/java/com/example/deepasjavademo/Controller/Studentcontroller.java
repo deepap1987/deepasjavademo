@@ -40,5 +40,5 @@ public class Studentcontroller {
     @RequestMapping(method=RequestMethod.GET ,value = "/Getbyid/{id}")
     public Optional<Student> getbyid(@PathVariable Integer id){     //method name is change getbyid
         return studentservice.getstudentbyid(id);
-    }
+    }// add more methods
 }
