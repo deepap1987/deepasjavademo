@@ -36,8 +36,9 @@ public class Studentcontroller {
     public void deletstudent(@PathVariable  Integer id){
         studentservice.deletstudent(id);
     }
+
     @RequestMapping(method=RequestMethod.GET ,value = "/Getbyid/{id}")
-    public Optional<Student> getstudentbyid(@PathVariable Integer id){
+    public Optional<Student> getbyid(@PathVariable Integer id){     //method name is change getbyid
         return studentservice.getstudentbyid(id);
-    }
+    }// add more methods
 }
