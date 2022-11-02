@@ -40,5 +40,6 @@ public class Studentcontroller {
     public Optional<Student> getstudentbyid(@PathVariable Integer id){
         return studentservice.getstudentbyid(id);
         //Added Comments
+        //can u add more methods
     }
 }
